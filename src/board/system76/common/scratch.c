@@ -13,6 +13,7 @@ uint8_t __code __at(SCRATCH_OFFSET) scratch_rom[] = {
     #include <scratch.h>
 };
 
+// clang-format off
 #if __EC__ == it5570e
     // SCAR0 is stored in processor cache, not in xram
     volatile uint8_t __xdata __at(0x1040) SCAR0L;
@@ -32,6 +33,7 @@ uint8_t __code __at(SCRATCH_OFFSET) scratch_rom[] = {
 #else
     #error "scratch.c unknown EC"
 #endif
+// clang-format on
 
 // Enter or exit scratch ROM
 void scratch_trampoline(void) {

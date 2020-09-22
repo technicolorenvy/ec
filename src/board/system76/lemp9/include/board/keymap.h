@@ -8,6 +8,7 @@
 #define ___ 0
 
 // Conversion of physical layout to keyboard matrix
+// clang-format off
 #define LAYOUT( \
     K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, K0B, K0C, K0D, K0E, K0F, K0G, \
     K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, K1B, K1C, K1D, \
@@ -34,6 +35,7 @@
     { ___, K2D, K60, K1D, K57, K0F, ___, K0G }, \
     { ___, ___, K3C, ___, K61, K0C, ___, K59 } \
 }
+// clang-format on
 
 // Keymap output pins
 #define KM_OUT 16
