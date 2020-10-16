@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-// Jos Onyx6 layout
+// Jos Oryx6 layout
 
 #include <board/keymap.h>
 
